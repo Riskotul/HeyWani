@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+}
+/*navbar*/
+.navbar {
+    background-color: #ffffff;
+    color: #FA9F42;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    position: fixed; /* Menetapkan posisi tetap */
+    top: 0; /* Tetap di atas */
+    width: 100%; /* Mengatur lebar agar sesuai dengan lebar viewport */
+    z-index: 1000; /* Menetapkan z-index tinggi agar berada di atas konten lainnya */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk tampilan yang lebih baik */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: auto;
+    width: 150px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+ul li {
+    margin: 0 40px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #FA9F42;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+    margin-left: 50px;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #FA9F42;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8%;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+button.daftar {
+    background-color: #8DD67A;
+    border-color: #8DD67A;
+    color: #FA9F42;
+}
+
+.navbar .logo {
+    margin-right: 50px;
+}
+
+/* Menghindari konten tertutup oleh navbar yang fixed */
+body {
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar */
+}
+
+/*main content*/
+.main-content {
+    background-color: #8DD67A; 
+    padding: 100px 100px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-content img {
+    width: 782px;
+    height: 528px;
+}
+
+.content {
+    flex: 1;
+}
+
+.content h1 {
+    margin: 0 0 50px 0;
+    font-size: 40px;
+}
+
+.content p {
+    margin: 0 0 50px 0;
+    font-size: 24px;
+}
+
+.content button {
+    background-color: #FA9F42;
+    border: none;
+    color: #000000;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.content button a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+/*container terima kasih telah mempercayai kami*/
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center; /* Teks diatur menjadi tengah */
+    margin-top: 80px;
+}
+  
+.banner {
+    background-color: #Fa9f42;
+    color: rgb(0, 0, 0);
+    font-size: 40px; /* Ukuran font untuk h1 */
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block; /* Membuat banner menjadi inline block */
+    margin: 0 auto; /* Menengahkan banner secara horizontal */
+    width: 1195px; /* Menetapkan lebar maksimum untuk banner */
+    height: 94px;
+    line-height: 94px; /* Menengahkan teks secara vertikal */
+    font-weight: bold; /* Mengatur teks menjadi bold */
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+}
+
+/*stat*/
+.stat {
+    display: flex;
+    justify-content: center; /* Memposisikan elemen ke tengah secara horizontal */
+    align-items: center; /* Memposisikan elemen ke tengah secara vertikal */
+    margin-top: 40px;
+}
+  
+.item {
+    text-align: center;
+    margin: 40px; /* Menambahkan jarak antara setiap item */
+}
+
+.image-container {
+    display: inline-block;
+    padding: 20px; /* Menambahkan padding untuk membuat latar belakang lebih besar dari gambar */
+    background-color: #fa9f42; /* Memberikan warna latar belakang orange */
+    border-radius: 50%; /* Membuat latar belakang gambar menjadi bulat */
+}
+
+.image-container img {
+    width: 100px; 
+    height: 100px;
+}
+
+  
+.item p {
+    font-size: 45px; /* Menambahkan ukuran font */
+    margin: 0;
+    font-weight: bold; /* Membuat teks menjadi bold */
+    margin-top: 10px;
+}
+  
+.item span {
+     display: block; 
+     font-size: 25px;
+     margin-top: 10px;
+}
+  
+/*mengapa pilih kami*/
+.section-title {
+    text-align: center;
+    font-size: 43px;
+    color: #000000;
+    margin-top: 50px;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center; /* Menyusun feature boxes di tengah */
+    gap: 80px; /* Mengatur jarak antar feature boxes */
+    padding: 0 50px; /* Menambahkan padding kiri dan kanan pada container */
+    margin-top: 80px;
+}
+
+.feature-box {
+    width: 370px; /* Menambahkan ukuran feature box */
+    height: 538px;
+    background-color: #FA9F42; /* Menambahkan latar belakang warna oranye */
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box; /* Menghitung padding ke dalam lebar dan tinggi total */
+}
+
+.feature-content {
+    text-align: center;
+}
+
+.feature-content img {
+    width: 289px; /* Menambahkan ukuran gambar */
+    height: 242px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-content h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.feature-content p {
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+    margin-top: 10px;
+}
+
+/*footer*/
+footer {
+    background-color: #8DD67A;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-logo,
+.footer-services,
+.footer-contact,
+.footer-follow {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer-logo img {
+    width: 138px;
+    height: 65px;
+}
+
+.footer-logo p {
+    font-size: 16px;
+    color: #000;
+}
+
+.footer-services h3,
+.footer-contact h3,
+.footer-follow h3 {
+    color: #000;
+    font-size: 24px;
+    font-weight: medium;
+}
+
+.footer-services ul,
+.footer-contact ul,
+.footer-follow ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.footer-services li,
+.footer-contact li {
+    color: #000;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-services li img,
+.footer-contact li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer-follow ul {
+    display: flex;
+    justify-content: flex-start; /* Align icons to the left */
+    padding: 0;
+}
+
+.footer-follow li {
+    margin: 0 10px;
+}
+
+.footer-follow a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-follow i {
+    font-size: 24px; /* Adjust the icon size here */
+}
+
+.footer-services ul,
+.footer-contact ul {
+    display: block;
+}
+
+.footer-services li,
+.footer-contact li {
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    background-color: #8DD67A;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-services,
+    .footer-contact,
+    .footer-follow {
+        margin: 5px 0;
+    }
+}

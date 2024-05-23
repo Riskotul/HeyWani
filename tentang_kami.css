@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+}
+/*navbar*/
+.navbar {
+    background-color: #ffffff;
+    color: #FA9F42;
+    padding: 15px 30px; /* Menambahkan padding di kiri dan kanan */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Memastikan ada jarak antara logo dan menu */
+    margin-bottom: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: auto; /* Sesuaikan nilai ini sesuai kebutuhan */
+    width: 180px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Menambahkan perataan vertikal */
+}
+
+ul li {
+    margin: 0 40px; /* Mengurangi margin kiri dan kanan */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #FA9F42;
+    font-weight: 600; /* Membuat font semi-bold */
+    font-size: 24px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px; /* Jarak antara tombol Masuk dan Daftar */
+}
+
+button {
+    background-color: transparent; /* Membuat latar belakang transparan */
+    border: 2px solid #ffffff; /* Menambahkan border solid */
+    color: #fa9f42; /* Mengatur warna teks */
+    padding: 5px 10px; /* Opsional: menambahkan padding */
+    cursor: pointer; /* Opsional: mengubah kursor saat hover */
+    border-radius: 8%;
+    font-weight: 600; /* Membuat font semi-bold */
+    font-size: 24px;
+}
+
+/* Tombol Daftar */
+button.daftar {
+    background-color: #8DD67A; /* Menetapkan warna latar belakang */
+    border-color: #8DD67A; /* Menetapkan warna border */
+    color: #FA9F42; /* Mengatur warna teks */
+}
+/* Menambahkan jarak antara elemen dan tepi */
+.navbar .logo {
+    margin-right: 50px; /* Sesuaikan nilai ini sesuai kebutuhan */
+}
+
+/*main-conten*/
+.main-content {
+    padding:  50px 100px; 
+    display: flex;
+    justify-content: space-between; /* Menyusun gambar dan teks di ujung-ujung */
+    align-items: center;
+    gap: 10px; /* Jarak antara gambar dan teks */
+}
+
+.main-content img {
+    width: 636px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height:556px; /* Biarkan tinggi gambar disesuaikan secara proporsional */
+}
+
+.content {
+    flex: 1; /* Membuat konten memenuhi sisa ruang yang tersedia */
+}
+
+.content h1 {
+    margin: 0 0 50px 0; /* Menambahkan jarak bawah antara judul dan paragraf */
+    font-size: 40px; /* Menambahkan ukuran font */
+}
+
+.content p {
+    margin: 0 0 50px 0; /* Menambahkan jarak bawah antara paragraf dan tombol */
+    font-size: 24px; /* Menambahkan ukuran font */
+}
+
+/*tim kami*/
+
+.section-title {
+    text-align: center;
+    font-size: 43px;
+    color: #000000;
+    margin-top: 50px;
+}
+
+.tim-kami {
+    display: flex;
+    justify-content: center; /* Memposisikan elemen ke tengah secara horizontal */
+    align-items: center; /* Memposisikan elemen ke tengah secara vertikal */
+    margin-top: 60px;
+}
+  
+.item {
+    text-align: center;
+    margin: 10px; /* Menambahkan jarak antara setiap item */
+    padding: 15px 40px;
+}
+
+.image-container img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar memenuhi area bulatan */
+    border-radius: 50%; /* Membuat latar belakang gambar menjadi bulat */
+}
+
+  
+.item p {
+    font-size: 30px; /* Menambahkan ukuran font */
+    margin: 0;
+    font-weight: bold; /* Membuat teks menjadi bold */
+    margin-top: 10px;
+}
+  
+.item span {
+     display: block; 
+     font-size: 24px;
+     margin-top: 10px;
+}
+
+/*foto*/
+.section-title1 {
+    text-align: center;
+    font-size: 43px;
+    color: #000000;
+    margin-top: 80px;
+}
+
+.zigzag-container {
+    display: flex;
+    flex-direction: row; /* Mengatur arah flex ke baris */
+    justify-content: center; /* Sejajarkan item ke kiri (default) */
+    gap: 10px; /* Jarak antar gambar */
+    margin-top: 80px;
+}
+
+.zigzag-item {
+    margin: 0; /* Hapus margin */
+    padding: 15px 5px;  /* Hapus padding */
+}
+
+.zigzag-item img {
+    width: 453px; /* Tetapkan lebar gambar */
+    height: 543px; /* Tetapkan tinggi gambar */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Hapus margin gambar */
+    padding: 0; /* Hapus padding gambar */
+}
+
+
+/*footer*/
+footer {
+    background-color: #8DD67A;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 200px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-logo,
+.footer-services,
+.footer-contact,
+.footer-follow {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer-logo img {
+    width: 138px;
+    height: 65px;
+}
+
+.footer-logo p {
+    font-size: 16px;
+    color: #000;
+}
+
+.footer-services h3,
+.footer-contact h3,
+.footer-follow h3 {
+    color: #000;
+    font-size: 24px;
+    font-weight: medium;
+}
+
+.footer-services ul,
+.footer-contact ul,
+.footer-follow ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.footer-services li,
+.footer-contact li {
+    color: #000;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-services li img,
+.footer-contact li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer-follow ul {
+    display: flex;
+    justify-content: flex-start; /* Align icons to the left */
+    padding: 0;
+}
+
+.footer-follow li {
+    margin: 0 10px;
+}
+
+.footer-follow a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-follow i {
+    font-size: 32px; /* Adjust the icon size here */
+}
+
+.footer-services ul,
+.footer-contact ul {
+    display: block;
+}
+
+.footer-services li,
+.footer-contact li {
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    background-color: #8DD67A;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-services,
+    .footer-contact,
+    .footer-follow {
+        margin: 5px 0;
+    }
+}
+
+
+
+
+
+
+
+
